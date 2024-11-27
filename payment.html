@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/headerNav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Payment</title>
+    <link rel="icon" type="image/ico" href="../assest/logo.jpg">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <h1>Payment</h1>
+    </header>
+    <main>
+        <form id="payment-form">
+            <h2>Enter Your Details</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <h2>Select Payment Method</h2>
+            <div class="form-group">
+                <label for="cash-on-delivery">Cash on Delivery</label>
+                <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery" required>
+            </div>
+
+            <div class="form-group payment-methods">
+                <div class="payoption">
+                    <label for="palmpay">Palmpay</label>
+                    <img src="../assest/Palmpay.jpg.jpg" alt="Pay via palmpay" class="payment-method">
+                    <input type="radio" id="palmpay" name="payment-method" value="palmpay" required>
+                </div>
+                <div class="payoption">
+                    <label for="Opay">Opay</label>
+                    <img src="../assest/Opay.jpg.jpg" alt="Pay via Opay" class="payment-method">
+                    <input type="radio" id="Opay" name="payment-method" value="Opay" required>
+
+                </div>
+            </div>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Crunchies Restaurant</p>
+        <p>oZIEGBE JOY | BSC.CSC | E-commerce Project Work | 6th semester</p>
+    </footer>
+    <script src="../script/payment-validation.js"></script>
+</body>
+
+</html>

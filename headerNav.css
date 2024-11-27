@@ -1,0 +1,222 @@
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background:white;
+}
+
+/*----------------header-------------------------*/
+header {
+    background-color: red;
+    color: #cdc4c4;
+    padding: 10px;
+    text-align: center; 
+}
+
+header span {
+    display: inline-block;
+}
+
+header span:nth-child(1) {
+    color:red;
+}
+
+header span:nth-child(2) {
+    color: white;
+}
+
+header span:nth-child(3) {
+    color: gold;
+    letter-spacing: 6px;
+    font-size: 16px;
+}
+h1 img{
+    border-radius: 50%;
+    width:50px;
+
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: red;
+    border-spacing: 1px;
+    border-bottom: red solid 4px;
+    
+}
+
+/* Add this CSS code to style the "Cart" button */
+.cart-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px; /* Adjust the spacing from the other navigation items */
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    
+}
+.cart-button:hover {
+    color: red;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+/* Style for the cart number badge */
+.cart-button .cart-number {
+    color: #030629;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 680px) {
+    .cart-button {
+        padding: 6px 10px; /* Reduce padding for a more compact size */
+        font-size: 10px; /* Reduce font size for better fit */
+        margin-left: 0; /* Remove left margin to save space on small screens */
+        margin-top: 18px; /* Add top margin for spacing */ 
+        text-align: center; /* Center-align the button text */
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: auto;
+    }
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.fixed-navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.fixed-navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.fixed-navbar a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fixed-navbar a:hover {
+    color: red;
+    border-spacing: 1px;
+    border-bottom: red solid 4px;
+}
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:gold;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    position:relative;
+
+}
+.container .wrapper{
+    width:80vw;
+    height: 80vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    margin:5rem auto;
+    overflow: hidden;
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height:100%;
+    width:100%;
+    animation:slider 15s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url(first.jpg);
+    background-position: center;
+    
+}
+.container #slider-img-2{
+    background-image: url(second.jpg);
+    background-position: center;
+    
+}
+.container #slider-img-3{
+    background-image: url(fourth.jpg);
+    background-position: center;
+
+    
+}
+.container #slider-img-5{
+    background-image: url(third.jpg);
+    background-position: center;
+}
+.container .button-holder .button{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px red;
+}
+@keyframes slider {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    8%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+    
+}
